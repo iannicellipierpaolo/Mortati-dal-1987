@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<meta name="description" content="Proposta dimostrativa per Mortati dal 1987, Castrovillari. Non è il sito ufficiale.">
+<meta name="theme-color" content="#f5f0e6">
+<meta name="format-detection" content="telephone=no">
+<title>Mortati dal 1987 · Castrovillari</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- FASCIA DEMO SUPERIORE -->
+<div class="top-demo-bar" role="banner">
+  <div class="top-demo-inner">
+    
+    <!-- TESTO 1 (Sinistra) -->
+    <span class="demo-col demo-col-left">Un assaggio di futuro</span>
+    
+    <!-- TESTO 2 (Centro) -->
+    <span class="demo-col demo-col-center">Demo di progetto · non è il sito ufficiale</span>
+    
+    <!-- TESTO 3 (Destra) -->
+    <div class="demo-col demo-col-right">
+      <button type="button" class="btn-demo-link" id="btn-open-proposal">
+        Scopri la proposta <span class="arrow-icon" aria-hidden="true">↗</span>
+      </button>
+    </div>
+
+  </div>
+</div>
+
+<!-- POPUP MODALE "SCOPRI LA PROPOSTA" -->
+<div class="demo-modal-backdrop" id="demo-modal" aria-hidden="true">
+  <div class="demo-modal-dialog" role="dialog" aria-labelledby="demo-modal-title">
+    <button type="button" class="btn-close-modal" id="btn-close-proposal" aria-label="Chiudi popup">×</button>
+    
+    <span class="section-tag">Proposta Digitale</span>
+    <h3 id="demo-modal-title" class="demo-modal-title">Mortati dal 1987 · Soluzione Web</h3>
+    
+    <p class="demo-modal-desc">
+      Questo progetto dimostrativo è stato realizzato su misura per valorizzare l'identità di Mortati: una filiera integrata che unisce allevamenti, macelleria artigianale e braceria.
+    </p>
+
+    <ul class="demo-modal-features">
+      <li><strong>Identità visiva:</strong> Video e immagini per raccontare la qualità autentica.</li>
+      <li><strong>Accesso diretto:</strong> Navigazione laterale a schede per una consultazione immediata.</li>
+      <li><strong>Ottimizzazione:</strong> Esperienza fluida e reattiva su tutti i dispositivi.</li>
+    </ul>
+
+  </div>
+</div>
+
+
+  <!-- SEZIONE 1: HERO -->
+<section class="hero" id="top">
+
+  <!-- Background video in sequenza -->
+  <div class="hero-bg">
+    <video class="hero-video is-active" src="assets/mortati1.mp4" muted playsinline webkit-playsinline preload="auto"></video>
+    <video class="hero-video" src="assets/mortati2.mp4" muted playsinline webkit-playsinline preload="metadata"></video>
+    <video class="hero-video" src="assets/mortati3.mp4" muted playsinline webkit-playsinline preload="metadata"></video>
+    <div class="hero-overlay"></div>
+  </div>
+
+  <!-- Header: Logo e Prenota -->
+
+<header class="hero-header">
+  <a href="#top" class="logo-brand" aria-label="Mortati dal 1987 - Torna a inizio pagina">
+    <img src="assets/logo-mortati.png" alt="Mortati dal 1987" class="logo-img">
+  </a>
+  <a href="#prenota" class="btn-book">Prenota un tavolo</a>
+</header>
+
+  <!-- Titolo principale -->
+  <div class="hero-content">
+    <h1 class="hero-title">Dal 1987, una filiera che va dalla terra alla tavola.</h1>
+  </div>
+
+  <!-- Slider laterale (5 sezioni) -->
+  <aside class="hero-slider" aria-label="Sezioni principali">
+    <ul class="slider-list">
+
+      <li class="slider-item is-active" data-target="storia">
+        <a href="#storia" class="slider-card">
+          <div class="slider-photo">
+            <img src="assets/la-nostra-storia_mortati.jpg" alt="La nostra storia" loading="eager">
+          </div>
+          <span class="slider-label">La nostra storia <span class="slider-arrow" aria-hidden="true">→</span></span>
+        </a>
+      </li>
+
+      <li class="slider-item" data-target="ristorante">
+        <a href="#ristorante" class="slider-card">
+          <div class="slider-photo">
+            <img src="assets/ristorante.jpg" alt="Il nostro ristorante" loading="lazy">
+          </div>
+          <span class="slider-label">Braceria Ristorante <span class="slider-arrow" aria-hidden="true">→</span></span>
+        </a>
+      </li>
+
+      <li class="slider-item" data-target="macelleria">
+        <a href="#macelleria" class="slider-card">
+          <div class="slider-photo">
+            <img src="assets/macelleria.jpg" alt="La nostra macelleria" loading="lazy">
+          </div>
+          <span class="slider-label">Macelleria & salumeria<span class="slider-arrow" aria-hidden="true">→</span></span>
+        </a>
+      </li>
+
+      <li class="slider-item" data-target="menu">
+        <a href="#menu" class="slider-card">
+          <div class="slider-photo">
+            <img src="assets/menu.jpg" alt="Menu" loading="lazy">
+          </div>
+          <span class="slider-label">Menu <span class="slider-arrow" aria-hidden="true">→</span></span>
+        </a>
+      </li>
+
+      <li class="slider-item" data-target="contatti">
+        <a href="#contatti" class="slider-card">
+          <div class="slider-photo">
+            <img src="assets/contatti.jpg" alt="Contatti e sede Mortati" loading="lazy">
+          </div>
+          <span class="slider-label">Contatti <span class="slider-arrow" aria-hidden="true">→</span></span>
+        </a>
+      </li>
+
+    </ul>
+  </aside>
+
+</section>
+
+
+<!-- SEZIONE 2: LA NOSTRA STORIA (Sinistra) -->
+<section class="section section-video-bg align-left" id="storia">
+
+  <div class="section-bg-media">
+    <video class="bg-video" src="assets/lanostrastoriavideo.mp4" autoplay muted loop playsinline webkit-playsinline></video>
+    <div class="bg-media-overlay"></div>
+  </div>
+
+  <div class="section-container">
+    <div class="editorial-box">
+      <span class="section-tag">Le Origini · Dal 1987</span>
+      <h2 class="editorial-title">Dalla terra alla tavola,<br><em>una tradizione di famiglia.</em></h2>
+      
+      <p class="editorial-lead">
+        Questa sezione racconterà ai vostri clienti le origini e l'identità autentica di Mortati dal 1987: la nascita dell'attività, i volti della famiglia e il legame profondo con il territorio del Pollino.
+      </p>
+      
+      <p class="editorial-desc">
+        Mostreremo l'impegno costante nella cura degli allevamenti e nella selezione rigorosa delle materie prime, trasmettendo la trasparenza e la dedizione che vi contraddistinguono.
+      </p>
+    </div>
+  </div>
+
+</section>
+
+
+<!-- SEZIONE 3: IL NOSTRO RISTORANTE (Destra) -->
+<section class="section section-video-bg align-right" id="ristorante">
+
+  <div class="section-bg-media">
+    <video class="bg-video" src="assets/ilnostroristorantevideo.MP4" autoplay muted loop playsinline webkit-playsinline></video>
+    <div class="bg-media-overlay"></div>
+  </div>
+
+  <div class="section-container">
+    <div class="editorial-box">
+      <span class="section-tag">Braceria Ristorante</span>
+      <h2 class="editorial-title">L'esperienza a tavola,<br><em>il calore della brace viva.</em></h2>
+      
+      <p class="editorial-lead">
+        Questa sezione presenterà l'atmosfera accogliente della sala e l'esperienza gastronomica del ristorante: il profumo della brace, il servizio attento e il piacere della convivialità.
+      </p>
+      
+      <p class="editorial-desc">
+        I clienti scopriranno come lavorate i tagli migliori direttamente sulla griglia e potranno approfondire l'esperienza culinaria con un invito immediato alla prenotazione del tavolo.
+      </p>
+
+      <div class="editorial-action">
+        <a href="#prenota" class="btn-book">Prenota un tavolo</a>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+<!-- SEZIONE 4: LA NOSTRA MACELLERIA (Sinistra) -->
+<section class="section section-video-bg align-left" id="macelleria">
+
+  <div class="section-bg-media">
+    <video class="bg-video" src="assets/lanostramacelleriavideo.mp4" autoplay muted loop playsinline webkit-playsinline></video>
+    <div class="bg-media-overlay"></div>
+  </div>
+
+  <div class="section-container">
+    <div class="editorial-box">
+      <span class="section-tag">Macelleria & salumeria</span>
+      <h2 class="editorial-title">Il banco macelleria,<br><em>freschezza e tagli scelti.</em></h2>
+      
+      <p class="editorial-lead">
+        Questa sezione illustrerà il punto vendita e il laboratorio artigianale: l'ampia varietà di carni fresche, i preparati pronti da cuocere, le frollature e i salumi tipici calabresi.
+      </p>
+      
+      <p class="editorial-desc">
+        I visitatori troveranno tutte le informazioni su cosa è possibile acquistare, con orari di apertura specifici del punto vendita e contatti diretti per ordinazioni e richieste.
+      </p>
+    </div>
+  </div>
+
+</section>
+
+
+<!-- SEZIONE 5: MENU (Destra) -->
+<section class="section section-video-bg align-right" id="menu">
+
+  <div class="section-bg-media">
+    <video class="bg-video" src="assets/menuvideo.MP4" autoplay muted loop playsinline webkit-playsinline></video>
+    <div class="bg-media-overlay"></div>
+  </div>
+
+  <div class="section-container">
+    <div class="editorial-box">
+      <span class="section-tag">Il menù della Braceria Ristorante</span>
+      <h2 class="editorial-title">Il vostro menù<br><em>totalmente personalizzabile</em></h2>
+      
+      <p class="editorial-lead">
+        Questa sezione offrirà la consultazione chiara e completa della carta del ristorante.
+      </p>
+      
+      <p class="editorial-desc">
+        Ottimizzata per una lettura rapida da smartphone con categorie suddivis, prezzi trasparenti, versione scaricabile in formato PDF o eventuale collegamento al menù già esistente.
+      </p>
+    </div>
+  </div>
+
+</section>
+
+
+<!-- SEZIONE 6: CONTATTI + FORM -->
+<!-- SEZIONE 6: CONTATTI (Layout 2 Colonne Affiancate) -->
+<section class="section section-contacts" id="contatti">
+
+  <!-- Sfondo Immagine Statica con Overlay -->
+  <div class="contacts-bg">
+    <!-- Sostituisci 'assets/contatti-bg.jpg' con l'immagine di background che preferisci -->
+    <img src="assets/contatti.jpg" alt="Sfondo contatti e sede Mortati" class="contacts-bg-img" loading="lazy">
+    <div class="contacts-overlay"></div>
+  </div>
+
+  <div class="contacts-wrapper">
+
+    <!-- COLONNA SINISTRA: Form Prenotazione + Nota Telefonica -->
+    <div class="contacts-col">
+      <div class="contact-card">
+        <span class="section-tag">Braceria Ristorante</span>
+        <h3 class="contact-card-title">Richiedi un tavolo</h3>
+        
+        <p class="contact-card-note">
+          <strong>Gestione personalizzabile:</strong> Potete scegliere di ricevere le richieste tramite questo modulo oppure mantenere la gestione tradizionale diretta <em>"carta e penna"</em> via telefono.
+        </p>
+
+        <form class="booking-form" id="prenota" novalidate>
+          <label>Nome e Cognome
+            <input type="text" name="nome" placeholder="Es. Mario Rossi" required autocomplete="name">
+          </label>
+          
+          <label>Telefono
+            <input type="tel" name="telefono" placeholder="Es. 340 1234567" required autocomplete="tel">
+          </label>
+
+          <div class="form-row">
+            <label>Data
+              <input type="date" name="data" required>
+            </label>
+            <label>Ora
+  <select name="ora" required>
+    <option value="" disabled selected>Seleziona orario</option>
+    <option value="20:00">20:00</option>
+    <option value="20:30">20:30</option>
+    <option value="21:00">21:00</option>
+    <option value="21:30">21:30</option>
+    <option value="22:00">22:00</option>
+    <option value="22:30">22:30</option>
+  </select>
+</label>
+            <label>Ospiti
+              <input type="number" name="persone" min="1" max="20" value="2" required>
+            </label>
+          </div>
+
+          <label>Note o richieste speciali
+            <textarea name="note" rows="2" placeholder="Allergie, preferenze di tavolo..."></textarea>
+          </label>
+
+          <button type="submit" class="btn-book btn-book--solid">Invia richiesta prenotazione</button>
+          <p class="form-msg" id="form-msg" role="status"></p>
+        </form>
+      </div>
+    </div>
+
+    <!-- COLONNA DESTRA: Recapiti, Indirizzi separati, Mail e Recensioni -->
+    <div class="contacts-col">
+      <div class="contact-card">
+        <span class="section-tag">Recapiti e Sedi</span>
+        <h3 class="contact-card-title">Vieni a trovarci</h3>
+
+        <!-- 1. Ristorante - Braceria -->
+        <div class="location-group">
+          <h4 class="location-heading">Braceria Ristorante</h4>
+          <ul class="location-details">
+            <li>
+              <span class="loc-label">Indirizzo:</span>
+              <span class="loc-value">Viale Padre Francesco Russo · Castrovillari (CS)</span>
+            </li>
+            <li>
+              <span class="loc-label">Telefono / Prenotazioni:</span>
+              <a href="tel:+390000000000" class="loc-link">+39 000 000 0000 (da inserire)</a>
+            </li>
+            <li>
+              <span class="loc-label">Email:</span>
+              <a href="mailto:ristorante@mortatidal1987.it" class="loc-link">ristorante@mortatidal1987.it (da inserire)</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- 2. Salumeria - Macelleria -->
+        <div class="location-group">
+          <h4 class="location-heading">Macelleria & Salumeria</h4>
+          <ul class="location-details">
+            <li>
+              <span class="loc-label">Indirizzo:</span>
+              <span class="loc-value">Viale delle Querce · Castrovillari (CS) </span>
+            </li>
+            <li>
+              <span class="loc-label">Telefono:</span>
+              <a href="tel:+390000000000" class="loc-link">+39 000 000 0000 (da inserire)</a>
+            </li>
+            <li>
+              <span class="loc-label">Email:</span>
+              <a href="mailto:macelleria@mortatidal1987.it" class="loc-link">macelleria@mortatidal1987.it (da inserire)</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- 3. Collegamento Recensioni -->
+        <div class="reviews-box">
+          <div class="reviews-rating">
+            <span class="stars" aria-hidden="true">★★★★★</span>
+            <strong>La voce dei nostri clienti</strong>
+          </div>
+          <p class="reviews-text">Scopri le recensioni e le opinioni su Google e TripAdvisor.</p>
+          <a href="https://www.google.com/maps/search/?api=1&query=Mortati+Castrovillari" target="_blank" rel="noopener" class="btn-review-link">
+            Leggi le recensioni<span aria-hidden="true">↗</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- FOOTER EDITORIALE -->
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-container">
+    
+    <!-- 1. Logo a sinistra (stesso usato in alto) -->
+    <div class="footer-brand">
+      <img src="assets/logo-mortati.png" alt="Mortati dal 1987" class="footer-logo-img">
+      <span class="footer-subtext">Dal 1987, con passione. Castrovillari</span>
+    </div>
+
+    <!-- 2. Testo centrale con link che apre il modale -->
+    <div class="footer-center">
+      <p class="footer-claim">Una proposta da costruire insieme.</p>
+      <button type="button" class="btn-footer-link" id="btn-open-notes">
+        Fonti, immagini e note sulla demo <span aria-hidden="true">↗</span>
+      </button>
+    </div>
+
+    <!-- 3. Pulsante Torna su a destra -->
+    <div class="footer-actions">
+      <a href="#top" class="btn-scroll-top" aria-label="Torna all'inizio della pagina">
+        <span aria-hidden="true">↑</span>
+      </a>
+    </div>
+
+  </div>
+</footer>
+
+<!-- MODALE "FONTI, IMMAGINI E NOTE SULLA DEMO" -->
+<div class="notes-modal-backdrop" id="notes-modal" aria-hidden="true">
+  <div class="notes-modal-dialog" role="dialog" aria-labelledby="notes-modal-title">
+    <button type="button" class="btn-close-notes" id="btn-close-notes" aria-label="Chiudi finestra note">×</button>
+
+    <div class="notes-modal-content">
+      <span class="notes-eyebrow">Trasparenza prima di tutto</span>
+      <h3 id="notes-modal-title" class="notes-title">Fonti & crediti.</h3>
+
+      <p class="notes-lead">
+        Demo indipendente, non approvata da Mortati dal 1987. Identità visiva e struttura proposte da concordare con i titolari.
+      </p>
+
+      <!-- Sezione 1: Storia e Identità -->
+      <div class="notes-block">
+        <h4 class="notes-heading">Storia e identità di filiera</h4>
+        <p>
+          I testi descrittivi sono stati elaborati in forma di bozza dimostrativa per valorizzare il marchio. Nella versione finale i contenuti saranno convalidati e approvati direttamente da Mortati dal 1987.
+        </p>
+      </div>
+
+      <!-- Sezione 2: Fotografie e Video -->
+      <div class="notes-block">
+        <h4 class="notes-heading">Fotografie e video</h4>
+        <p>
+          Le riprese e le immagini di macelleria, sala, piatti e brace sono immagini pubbliche online o mock-up illustrativi utilizzati al solo scopo di mostrare la resa del layout. Prima della pubblicazione online ufficiale occorrerà la formale autorizzazione del titolare all'utilizzo del materiale multimediale.
+        </p>
+      </div>
+
+      <!-- Sezione 3: Privacy e Funzionamento -->
+      <div class="notes-block">
+        <h4 class="notes-heading">Privacy e funzionamento</h4>
+        <p>
+          Il codice di questa demo non imposta cookie di profilazione, non raccoglie dati personali, non effettua analisi di tracciamento e non invia le richieste del modulo (simulazione dimostrativa). Immagini, video e font sono ospitati localmente o via CDN ad accesso libero.
+        </p>
+        <p class="notes-sub">
+          Prima dell'eventuale messa in produzione definitiva occorreranno l'approvazione formale dei contenuti, la verifica dei diritti e la redazione dell'informativa privacy conforme al GDPR.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
