@@ -138,3 +138,44 @@
       }
     });
   }
+
+/* --- 6. Comparsa laterale delle sole quattro caselle narrative --- */
+(function () {
+  const boxes = document.querySelectorAll(
+    '.section-video-bg .editorial-box'
+  );
+  const reducedMotion = window.matchMedia(
+    '(prefers-reduced-motion: reduce)'
+  );
+
+  if (reducedMotion.matches || !('IntersectionObserver' in window)) {
+    return;
+  }
+
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) {
+        return;
+      }
+
+      entry.target.classList.add('is-visible');
+      revealObserver.unobserve(entry.target);
+    });
+  }, {
+    threshold: 0,
+    rootMargin: '0px 0px -40px 0px'
+  });
+
+  boxes.forEach((box) => {
+    box.classList.add('reveal-pending');
+    revealObserver.observe(box);
+  });
+
+  // Rende subito visibile anche una casella raggiunta tramite tastiera.
+  boxes.forEach((box) => {
+    box.addEventListener('focusin', () => {
+      box.classList.add('is-visible');
+      revealObserver.unobserve(box);
+    });
+  });
+})();

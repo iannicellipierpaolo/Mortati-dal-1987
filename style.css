@@ -1005,3 +1005,43 @@ a:focus-visible{outline:2px solid var(--burg);outline-offset:3px}
 textarea {
   resize: none;
 }
+
+/* ===== Comparsa del titolo e delle quattro caselle narrative ===== */
+.hero-title-accent {
+  color: var(--burg);
+}
+
+@keyframes hero-title-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .hero-title {
+    animation: hero-title-reveal 1.1s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  .section-video-bg .editorial-box.reveal-pending {
+    opacity: 0;
+    transform: translateX(-64px);
+    transition:
+      opacity 0.9s ease,
+      transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .section-video-bg.align-right .editorial-box.reveal-pending {
+    transform: translateX(64px);
+  }
+
+  .section-video-bg .editorial-box.reveal-pending.is-visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
