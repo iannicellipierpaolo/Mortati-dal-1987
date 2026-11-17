@@ -1,3 +1,33 @@
+/* =============================================================
+   FONT LOCALI - Mortati dal 1987
+   Stesse famiglie originali: Fraunces e Inter.
+   I file vengono installati da installa-font.sh in ./font/.
+   ============================================================= */
+
+@font-face {
+    font-family: "Fraunces Locale";
+    src: url("./font/Fraunces-Variable.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Fraunces Locale";
+    src: url("./font/Fraunces-Italic-Variable.ttf") format("truetype");
+    font-style: italic;
+    font-weight: 100 900;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter Locale";
+    src: url("./font/Inter-Variable.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+}
+
 /* ===== Mortati dal 1987 – Stile Completo (Bordi Neri & Box Traslucidi) ===== */
 :root{
   --cream:#f7f0e3;
@@ -10,8 +40,8 @@
   --burg-light:#c23c4e;
   --terracotta:#e68a73;
   --ink:#2a211b;
-  --font-serif:'Fraunces',Georgia,serif;
-  --font-sans:'Inter',system-ui,sans-serif;
+  --font-serif:'Fraunces Locale','Fraunces',Georgia,serif;
+  --font-sans:'Inter Locale','Inter',system-ui,sans-serif;
   --slider-w:clamp(280px,26vw,400px);
 }
 *{box-sizing:border-box;margin:0;padding:0}

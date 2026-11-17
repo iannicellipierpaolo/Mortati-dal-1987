@@ -179,3 +179,43 @@
     });
   });
 })();
+/* ========================================
+   PREVENZIONE EMOJI APPLE
+======================================== */
+
+function forzaSimboliTestuali() {
+    const walker = document.createTreeWalker(
+        document.body,
+        NodeFilter.SHOW_TEXT
+    );
+
+    while (walker.nextNode()) {
+        const nodo = walker.currentNode;
+
+        if (
+            !nodo.parentElement ||
+            nodo.parentElement.closest(
+                "script, style, noscript, textarea, code, pre"
+            )
+        ) {
+            continue;
+        }
+
+        if (/[↗→↑★]/u.test(nodo.nodeValue)) {
+            nodo.nodeValue = nodo.nodeValue.replace(
+                /([↗→↑★])(?!\uFE0E)/gu,
+                "$1\uFE0E"
+            );
+        }
+    }
+}
+
+if (document.readyState === "loading") {
+    document.addEventListener(
+        "DOMContentLoaded",
+        forzaSimboliTestuali,
+        { once: true }
+    );
+} else {
+    forzaSimboliTestuali();
+}
